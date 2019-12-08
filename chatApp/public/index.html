@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="./fav.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="head" class="border border-dark">
+        <div class=" text-center"><h1 class="msg text-white">Messages</h1></div>
+        <div id="window" >
+            <div id="output"></div>
+            <div id="feedback"></div>
+        </div>
+        <div id="name" class="form-group border bg-warning"><input id="handle" type="text" placeholder="Name"><button id="confirm" class="btn btn-warning">Confirm</button></div>
+        <div id="allow" class="hide"><h3 id="welcome" class="bg-dark text-center text-white"></h3></div>
+        <input id="message" type="text" placeholder="Type your message... ">
+        <button id="btn" class="btn btn-primary" disabled>Send</button>
+    </div>
+    <script src="/chat.js"></script>
+</body>
+</html>
